@@ -11,6 +11,8 @@
 		89FC5FE920DA483287A485F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC42C0A691114FAB90F973D3 /* main.m */; };
 		8EA6448803CE4551804EC39D /* JDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E513C40A4B4443D8915C688 /* JDFAppDelegate.m */; };
 		EC628CE942544944946E321C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA900FF1B7314D5D95A7D9BD /* Images.xcassets */; };
+		F2CDB0DA194E1A6E00F22707 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CDB0D9194E1A6E00F22707 /* SampleTableViewController.m */; };
+		F2CDB0DE194E1AF300F22707 /* JDFActiveHighlightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CDB0DD194E1AF300F22707 /* JDFActiveHighlightTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,10 @@
 		B347A1ECD76C48C5B7B58AEE /* JDFActiveHighlightCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDFActiveHighlightCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC42C0A691114FAB90F973D3 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB607691001741EFA0B31CDA /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		F2CDB0D8194E1A6E00F22707 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
+		F2CDB0D9194E1A6E00F22707 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
+		F2CDB0DC194E1AF300F22707 /* JDFActiveHighlightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFActiveHighlightTableViewCell.h; path = ../JDFActiveHighlightCell/JDFActiveHighlightTableViewCell.h; sourceTree = "<group>"; };
+		F2CDB0DD194E1AF300F22707 /* JDFActiveHighlightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFActiveHighlightTableViewCell.m; path = ../JDFActiveHighlightCell/JDFActiveHighlightTableViewCell.m; sourceTree = "<group>"; };
 		F709A5A928E64A75A5C708C2 /* JDFActiveHighlightCell-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JDFActiveHighlightCell-Prefix.pch"; sourceTree = "<group>"; };
 		FA900FF1B7314D5D95A7D9BD /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +145,8 @@
 		6AE6F83B1B664A6389C15D28 = {
 			isa = PBXGroup;
 			children = (
-				D0E9339750CE49E2AECC0FFA /* JDFActiveHighlightCell */,
+				F2CDB0DB194E1AC500F22707 /* Source */,
+				D0E9339750CE49E2AECC0FFA /* JDFActiveHighlightCellExample */,
 				B6F4B8035E3D4ED3B9E2690F /* UnitTests */,
 				42E830BF73094EA0899203C4 /* Frameworks */,
 				68E8F8AC5B914E8A98FB3B66 /* Products */,
@@ -182,6 +189,8 @@
 		BB736AB0F65745E088CA45D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2CDB0D8194E1A6E00F22707 /* SampleTableViewController.h */,
+				F2CDB0D9194E1A6E00F22707 /* SampleTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,7 +208,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		D0E9339750CE49E2AECC0FFA /* JDFActiveHighlightCell */ = {
+		D0E9339750CE49E2AECC0FFA /* JDFActiveHighlightCellExample */ = {
 			isa = PBXGroup;
 			children = (
 				6D1953EA04FD49579027D8FB /* Categories */,
@@ -207,6 +216,7 @@
 				60202BD3F93942EAB8743DAB /* Constants */,
 				37183C387C7B4A8C988DC544 /* Resources */,
 			);
+			name = JDFActiveHighlightCellExample;
 			path = JDFActiveHighlightCell;
 			sourceTree = "<group>";
 		};
@@ -218,6 +228,15 @@
 				CC42C0A691114FAB90F973D3 /* main.m */,
 			);
 			path = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		F2CDB0DB194E1AC500F22707 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F2CDB0DC194E1AF300F22707 /* JDFActiveHighlightTableViewCell.h */,
+				F2CDB0DD194E1AF300F22707 /* JDFActiveHighlightTableViewCell.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		F3D52BFABE72484FBB35B6A0 /* Tests */ = {
@@ -344,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA6448803CE4551804EC39D /* JDFAppDelegate.m in Sources */,
+				F2CDB0DE194E1AF300F22707 /* JDFActiveHighlightTableViewCell.m in Sources */,
+				F2CDB0DA194E1A6E00F22707 /* SampleTableViewController.m in Sources */,
 				89FC5FE920DA483287A485F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
