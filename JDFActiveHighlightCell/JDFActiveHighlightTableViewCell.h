@@ -11,6 +11,7 @@
 @interface JDFActiveHighlightTableViewCell : UITableViewCell
 
 @property (nonatomic) BOOL activeHighlightingEnabled;
+@property (nonatomic, strong) UIColor *highlightColor;
 
 - (void)showActiveHighlight;
 - (void)hideActiveHighlight;

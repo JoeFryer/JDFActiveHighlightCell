@@ -28,6 +28,16 @@ static CGFloat const JDFActiveHighlightTableViewCellActiveHighlightExtendedWidth
 
 @implementation JDFActiveHighlightTableViewCell
 
+#pragma mark - Getters
+
+- (UIColor *)highlightColor
+{
+    if (!_highlightColor) {
+        _highlightColor = [UIColor colorWithRed:52.0f/255.0f green:152.0f/255.0f blue:219.0f/255.0f alpha:1.0f];
+    }
+    return _highlightColor;
+}
+
 #pragma mark - Lifecycle
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -104,7 +114,7 @@ static CGFloat const JDFActiveHighlightTableViewCellActiveHighlightExtendedWidth
     backgroundView.backgroundColor = [UIColor clearColor];
     self.backgroundView = backgroundView;
     self.activeHighlight = [[UIView alloc] initWithFrame:startingFrame];
-    self.activeHighlight.backgroundColor = [UIColor colorWithRed:52.0f/255.0f green:152.0f/255.0f blue:219.0f/255.0f alpha:1.0f];
+    self.activeHighlight.backgroundColor = self.highlightColor;
     [self.backgroundView addSubview:self.activeHighlight];
     [self.backgroundView sendSubviewToBack:self.activeHighlight];
         
