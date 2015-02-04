@@ -11,4 +11,4 @@ The look of the highlight can be seen in the screenshot below. The highlight is 
 
 You can change the colour of the highlight by setting the cell's `highlightColor` property. The default colour is the blue shown below.
 
-![](Screenshots/Screenshot1.png)
+<img src="Screenshots/Screenshot1.png" width="300"/>
